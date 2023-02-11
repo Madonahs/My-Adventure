@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZM-gF-eoK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treasure-map" translatesAutoresizingMaskIntoConstraints="NO" id="cWJ-Ug-J7O">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mbz-rT-bSu">
+                                <rect key="frame" x="30" y="89" width="333" height="699"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-ly-Pir">
+                                        <rect key="frame" x="30" y="0.0" width="273" height="349.66666666666669"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="4" height="0.0"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EA3-P8-epi">
+                                        <rect key="frame" x="30" y="349.66666666666674" width="273" height="349.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTp-oK-yXg">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="167"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" cornerRadius="12" strokeWidth="5">
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.49278249169999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="strokeColor" systemColor="tintColor"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sendOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXr-XM-erb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckL-aW-NpU">
+                                                <rect key="frame" x="0.0" y="181.99999999999994" width="273" height="167.33333333333331"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" cornerRadius="12" strokeWidth="5">
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.49278249169999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="strokeColor" systemColor="tintColor"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sendOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SM7-JK-pQE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EA3-P8-epi" secondAttribute="trailing" constant="30" id="2i0-IW-sG6"/>
+                                    <constraint firstAttribute="trailing" secondItem="lkV-ly-Pir" secondAttribute="trailing" constant="30" id="IbV-O4-KiQ"/>
+                                    <constraint firstItem="lkV-ly-Pir" firstAttribute="leading" secondItem="Mbz-rT-bSu" secondAttribute="leading" constant="30" id="JpQ-hC-8AJ"/>
+                                    <constraint firstItem="EA3-P8-epi" firstAttribute="leading" secondItem="Mbz-rT-bSu" secondAttribute="leading" constant="30" id="VN2-B1-V1B"/>
+                                    <constraint firstItem="lkV-ly-Pir" firstAttribute="height" secondItem="EA3-P8-epi" secondAttribute="height" id="lzP-ig-P9I"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Bg-eq-aEV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cWJ-Ug-J7O" firstAttribute="leading" secondItem="vZM-gF-eoK" secondAttribute="leading" id="2z8-En-wka"/>
+                            <constraint firstItem="6Bg-eq-aEV" firstAttribute="trailing" secondItem="Mbz-rT-bSu" secondAttribute="trailing" constant="30" id="79W-4P-t3e"/>
+                            <constraint firstItem="Mbz-rT-bSu" firstAttribute="top" secondItem="6Bg-eq-aEV" secondAttribute="top" constant="30" id="Fuj-vJ-LuR"/>
+                            <constraint firstItem="cWJ-Ug-J7O" firstAttribute="trailing" secondItem="vZM-gF-eoK" secondAttribute="trailing" id="OFZ-k4-EoL"/>
+                            <constraint firstItem="cWJ-Ug-J7O" firstAttribute="top" secondItem="vZM-gF-eoK" secondAttribute="top" id="Qm5-2z-Rua"/>
+                            <constraint firstItem="Mbz-rT-bSu" firstAttribute="leading" secondItem="6Bg-eq-aEV" secondAttribute="leading" constant="30" id="SbU-sV-ioz"/>
+                            <constraint firstItem="6Bg-eq-aEV" firstAttribute="bottom" secondItem="Mbz-rT-bSu" secondAttribute="bottom" constant="30" id="XpN-dj-VAJ"/>
+                            <constraint firstAttribute="bottom" secondItem="cWJ-Ug-J7O" secondAttribute="bottom" id="uJI-bc-Iol"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOne" destination="yTp-oK-yXg" id="dUM-lM-dDY"/>
+                        <outlet property="buttonTwo" destination="ckL-aW-NpU" id="Fpt-ce-Npv"/>
+                        <outlet property="image" destination="cWJ-Ug-J7O" id="ejN-oC-ZNZ"/>
+                        <outlet property="wordDisplay" destination="lkV-ly-Pir" id="CZe-Bt-P73"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="treasure-map" width="1000" height="666.66668701171875"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
